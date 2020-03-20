@@ -7,6 +7,8 @@ import { APP_BASE_HREF } from '@angular/common';
 import { AppComponent } from './app.component';
 import { EquipamentosModule } from './equipamentos/equipamentos.module';
 import { ClientesModule } from './clientes/clientes.module';
+import { RastrearEquipamentosComponent } from './equipamentos/rastrear-equipamentos/rastrear-equipamentos.component';
+import { RastrearEquipamentosProComponent } from './equipamentos/rastrear-equipamentos-pro/rastrear-equipamentos-pro.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { ClientesModule } from './clientes/clientes.module';
     BrowserModule,
     FormsModule,
     RouterModule.forRoot([
-      {path: '', redirectTo: 'equipamentos', pathMatch: 'full'}
+      {path: '', redirectTo: 'equipamentos', pathMatch: 'full'},
+      {path: 'equipamentos', component: RastrearEquipamentosComponent},
+      {path: 'equipamentos-pro', component: RastrearEquipamentosProComponent}
     ]),
     EquipamentosModule,
     ClientesModule

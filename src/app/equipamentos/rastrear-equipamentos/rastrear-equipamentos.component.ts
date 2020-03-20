@@ -12,11 +12,10 @@ export class RastrearEquipamentosComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-
+  
   }
   
   // google maps zoom level
-  
   zoom: number = 14;
   
     // initial center position for the map

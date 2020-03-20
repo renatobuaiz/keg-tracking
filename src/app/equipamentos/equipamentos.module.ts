@@ -5,10 +5,12 @@ import { RouterModule } from '@angular/router';
 import { AgmCoreModule } from '@agm/core';
 
 import { RastrearEquipamentosComponent } from './rastrear-equipamentos/rastrear-equipamentos.component';
+import { RastrearEquipamentosProComponent } from './rastrear-equipamentos-pro/rastrear-equipamentos-pro.component';
 
 @NgModule({
   declarations: [
-    RastrearEquipamentosComponent
+    RastrearEquipamentosComponent,
+    RastrearEquipamentosProComponent
   ],
   imports: [
     CommonModule,
@@ -16,7 +18,7 @@ import { RastrearEquipamentosComponent } from './rastrear-equipamentos/rastrear-
       {path: 'equipamentos', component: RastrearEquipamentosComponent}
     ]),
     AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyAvcDy5ZYc2ujCS6TTtI3RYX5QmuoV8Ffw' 
+      apiKey: 'AIzaSyChOiFA_ghDfHOp-NxvS0G6Ga8RXCkvqvo'
     })
   ],
   exports: []
