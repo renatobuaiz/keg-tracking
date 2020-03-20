@@ -16,7 +16,7 @@ import { RastrearEquipamentosComponent } from './rastrear-equipamentos/rastrear-
       {path: 'equipamentos', component: RastrearEquipamentosComponent}
     ]),
     AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyChOiFA_ghDfHOp-NxvS0G6Ga8RXCkvqvo' 
+      apiKey: 'AIzaSyAvcDy5ZYc2ujCS6TTtI3RYX5QmuoV8Ffw' 
     })
   ],
   exports: []
