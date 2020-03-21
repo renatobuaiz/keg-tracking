@@ -18,7 +18,8 @@ import { RastrearEquipamentosProComponent } from './rastrear-equipamentos-pro/ra
       {path: 'equipamentos', component: RastrearEquipamentosComponent}
     ]),
     AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyAvcDy5ZYc2ujCS6TTtI3RYX5QmuoV8Ffw' 
+      // apiKey: 'AIzaSyAvcDy5ZYc2ujCS6TTtI3RYX5QmuoV8Ffw'
+      apiKey: 'AIzaSyChOiFA_ghDfHOp-NxvS0G6Ga8RXCkvqvo'
     })
   ],
   exports: []

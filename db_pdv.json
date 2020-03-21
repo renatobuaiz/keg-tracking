@@ -1,0 +1,24 @@
+{
+  "pdvs": [
+    {
+      "id": 1,
+      "position": {
+          "lat": -19.931440,
+          "lng": -43.954082
+        },
+      "map": null,
+      "title": "Empório du Carmo",
+      "icon": "https://image.flaticon.com/icons/svg/934/934341.svg"
+    },
+    {
+        "id": 2,
+        "position": {
+            "lat": -19.940726,
+            "lng": -43.947880
+          },
+        "map": null,
+        "title": "Brewhouse",
+        "icon": "https://image.flaticon.com/icons/svg/934/934341.svg"
+      }
+  ]
+}
