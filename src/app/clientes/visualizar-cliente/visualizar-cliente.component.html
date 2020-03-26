@@ -1,0 +1,18 @@
+<mat-toolbar class="app-title">Cliente</mat-toolbar>
+<mat-list *ngIf="cliente; else semRegistro">
+    <mat-list-item> ID: {{cliente.id}} </mat-list-item>
+    <mat-list-item> Nome Fantasia: {{cliente.nomeFantasia}} </mat-list-item>
+    <mat-list-item> Latitude: {{cliente.posicaoGPS.latitude | number: '0.000000'}} </mat-list-item>
+    <mat-list-item> Longitude: {{cliente.posicaoGPS.longitude | number: '0.000000'}} </mat-list-item>
+</mat-list>
+
+<mat-card>
+<mat-card-actions>
+    <button type="submit" color="accent" mat-raised-button (click)="editar()">Editar</button>
+    <button type="reset" color="warn" mat-raised-button (click)="excluir()">Excluir</button>
+  </mat-card-actions>
+</mat-card>
+
+<ng-template #semRegistro>
+    <h1 class="full-width main-div">Nenhum registro encontrado!</h1>
+</ng-template>

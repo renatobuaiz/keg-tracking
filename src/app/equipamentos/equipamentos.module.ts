@@ -14,9 +14,10 @@ import { RastrearEquipamentosProComponent } from './rastrear-equipamentos-pro/ra
   ],
   imports: [
     CommonModule,
-    RouterModule.forChild([
-      {path: 'equipamentos', component: RastrearEquipamentosComponent}
-    ]),
+/*    RouterModule.forChild([
+      {path: 'equipamentos', component: RastrearEquipamentosComponent},
+      {path: 'equipamntos-pro', component: RastrearEquipamentosProComponent}
+    ]), */
     AgmCoreModule.forRoot({
       // apiKey: 'AIzaSyAvcDy5ZYc2ujCS6TTtI3RYX5QmuoV8Ffw'
       apiKey: 'AIzaSyChOiFA_ghDfHOp-NxvS0G6Ga8RXCkvqvo'

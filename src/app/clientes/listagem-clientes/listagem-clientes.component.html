@@ -1,0 +1,49 @@
+<mat-toolbar class="app-title">Clientes</mat-toolbar>
+<mat-form-field>
+    <mat-label>Filter</mat-label>
+    <input matInput (keyup)="applyFilter($event)" placeholder="Ex. Bar">
+</mat-form-field>
+  
+<div class="mat-elevation-z8">
+    <table mat-table [dataSource]="dataSource" matSort>
+
+        <!-- ID Column -->
+        <ng-container matColumnDef="id">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> ID </th>
+        <td mat-cell *matCellDef="let cli"> {{cli.id}} </td>
+        </ng-container>
+
+        <!-- Progress Column -->
+        <ng-container matColumnDef="nomeFantasia">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Nome Fantasia </th>
+        <td mat-cell *matCellDef="let cli">{{cli.nomeFantasia}} </td>
+        </ng-container>
+
+        <!-- Name Column -->
+        <ng-container matColumnDef="latitude">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Latitude </th>
+        <td mat-cell *matCellDef="let cli"> {{cli.latitude}} </td>
+        </ng-container>
+
+        <!-- Color Column -->
+        <ng-container matColumnDef="longitude">
+        <th mat-header-cell *matHeaderCellDef mat-sort-header> Longitude </th>
+        <td mat-cell *matCellDef="let cli"> {{cli.longitude}} </td>
+        </ng-container>
+
+        <!-- Color Column -->
+        <ng-container matColumnDef="acoes">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> Ações </th>
+            <td mat-cell *matCellDef="let cli">
+                <button mat-icon-button (click)="abrir(cli.id)">
+                    <mat-icon class="material-icons">pageview</mat-icon>
+                </button>
+            </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let cli; columns: displayedColumns;"></tr>
+    </table>
+
+    <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]"></mat-paginator>
+</div>

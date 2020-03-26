@@ -44,3 +44,7 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+
+# Personal Files
+src/app/equipamentos/equipamentos.module.ts
+src/index.html

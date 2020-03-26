@@ -1,0 +1,222 @@
+{
+  "cliente": [
+    {
+      "id": 1,
+      "nomeFantasia": "Empório du Carmo",
+      "posicaoGPS": {
+        "latitude": -19.93144,
+        "longitude": -43.954082
+      }
+    },
+    {
+      "id": 2,
+      "nomeFantasia": "Brewhouse",
+      "posicaoGPS": {
+        "latitude": -19.940726,
+        "longitude": -43.94788
+      }
+    },
+    {
+      "id": 3,
+      "nomeFantasia": "Rhara",
+      "posicaoGPS": {
+        "latitude": -19.945153,
+        "longitude": -43.920599
+      }
+    },
+    {
+      "id": 4,
+      "nomeFantasia": "Growleria",
+      "posicaoGPS": {
+        "latitude": -19.936406,
+        "longitude": -43.935217
+      }
+    },
+    {
+      "id": 5,
+      "nomeFantasia": "Brewpub Casa OLEC",
+      "posicaoGPS": {
+        "latitude": -19.942207,
+        "longitude": -43.936176
+      }
+    },
+    {
+      "nomeFantasia": "Planeta Lúpulo",
+      "posicaoGPS": {
+        "latitude": -19.844274,
+        "longitude": -43.977008
+      },
+      "id": 6
+    },
+    {
+      "nomeFantasia": "UAI Cervejas",
+      "posicaoGPS": {
+        "latitude": -19.974543,
+        "longitude": -43.941954
+      },
+      "id": 7
+    },
+    {
+      "nomeFantasia": "Go Growler",
+      "posicaoGPS": {
+        "latitude": -19.968894,
+        "longitude": -43.961122
+      },
+      "id": 8
+    },
+    {
+      "nomeFantasia": "Incógnita Lab",
+      "posicaoGPS": {
+        "latitude": -19.932745,
+        "longitude": -43.954053
+      },
+      "id": 9
+    },
+    {
+      "nomeFantasia": "Jacinta",
+      "posicaoGPS": {
+        "latitude": -19.923533,
+        "longitude": -43.92182
+      },
+      "id": 10
+    }
+  ],
+  "cervejaria": [
+    {
+      "id": 1,
+      "nomeFantasia": "Aeon Cervejaria",
+      "posicaoGPS": {
+        "latitude": -19.93144,
+        "longitude": -43.954082
+      }
+    }
+  ],
+  "produto": [
+    {
+      "id": 1,
+      "cervejariaId": 1,
+      "tipo": "Cerveja",
+      "marca": "Mangifera",
+      "estilo": "American IPA"
+    },
+    {
+      "id": 2,
+      "cervejariaId": 1,
+      "tipo": "Cerveja",
+      "marca": "Mangifera",
+      "estilo": "Session IPA"
+    },
+    {
+      "id": 3,
+      "cervejariaId": 1,
+      "tipo": "Cerveja",
+      "marca": "Mangifera",
+      "estilo": "Double IPA"
+    },
+    {
+      "id": 4,
+      "cervejariaId": 1,
+      "tipo": "Cerveja",
+      "marca": "Mangifera",
+      "estilo": "Black IPA"
+    },
+    {
+      "id": 5,
+      "cervejariaId": 1,
+      "tipo": "Cerveja",
+      "marca": "Gol da Alemanha",
+      "estilo": "German IPA"
+    },
+    {
+      "id": 6,
+      "cervejariaId": 1,
+      "tipo": "Cerveja",
+      "marca": "Black Machine",
+      "estilo": "Brown IPA"
+    }
+  ],
+  "vasilhame": [
+    {
+      "id": 1,
+      "cervejariaId": 1,
+      "identificacao": "KG30 0001",
+      "tipo": "barril inox",
+      "volume": 30,
+      "idProduto": 1,
+      "dataEnvase": "2020-01-01T03:00:00.000Z",
+      "ultimaPosicaoGPS": {
+        "latitude": -19.945153,
+        "longitude": -43.920599
+      }
+    },
+    {
+      "id": 2,
+      "idCervejaria": 1,
+      "identificacao": "KG30 0002",
+      "tipo": "barril inox",
+      "volume": 30,
+      "idProduto": 1,
+      "dataEnvase": "2020-01-01T03:00:00.000Z",
+      "ultimaPosicaoGPS": {
+        "latitude": -19.940726,
+        "longitude": -43.94788
+      }
+    },
+    {
+      "id": 3,
+      "idCervejaria": 1,
+      "identificacao": "KG30 0003",
+      "tipo": "barril pet",
+      "volume": 30,
+      "idProduto": 2,
+      "dataEnvase": "2020-01-01T03:00:00.000Z",
+      "ultimaPosicaoGPS": {
+        "latitude": -19.945153,
+        "longitude": -43.920599
+      }
+    }
+  ],
+  "item-romaneio": [
+    {
+      "id": 1,
+      "romaneioId": "1",
+      "entregadorId": 1,
+      "clienteId": 3,
+      "vasilhameId": 1,
+      "dataEntrega": "2020-01-02T03:00:00.000Z",
+      "dataAvisoRecolha": "",
+      "dataRecolha": "",
+      "dataDevolucao": ""
+    },
+    {
+      "id": 1,
+      "romaneioId": "2",
+      "entregadorId": "1",
+      "clienteId": 2,
+      "vasilhameId": 2,
+      "dataEntrega": "2020-01-02T03:00:00.000Z",
+      "dataAvisoRecolha": "",
+      "dataRecolha": "",
+      "dataDevolucao": ""
+    },
+    {
+      "id": 1,
+      "romaneioId": "3",
+      "entregadorId": "1",
+      "clienteId": 3,
+      "vasilhameId": 3,
+      "dataEntrega": "2020-01-02T03:00:00.000Z",
+      "dataAvisoRecolha": "",
+      "dataRecolha": "",
+      "dataDevolucao": ""
+    }
+  ],
+  "romaneio": [
+    {
+      "id": 1,
+      "cervejariaId": 1,
+      "tituloRomaneio": "Romaneio 02/01/2019",
+      "dataDespacho": "2020-01-02T03:00:00.000Z"
+    }
+  ]
+}
